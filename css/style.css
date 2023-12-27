@@ -12,5 +12,5 @@ html {
 }
 
 .navbar {
-    background-color: red;
+    background-color: var(--color-secondary);
 }

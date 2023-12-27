@@ -2,7 +2,12 @@
     gap: 15px;
 }
 
-.navbar-nav .nav-item a {
-    font-size: 1.5em;
+.navbar-nav .nav-item .nav-link {
+    font-size: .7em;
+    color: var(--color-white);
+}
+
+.navbar-nav .nav-item:hover>a {
     color: var(--color-primary);
+    transition: color .5s ease-in-out;
 }
