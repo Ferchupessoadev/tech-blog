@@ -1,0 +1,8 @@
+.navbar-nav {
+    gap: 15px;
+}
+
+.navbar-nav .nav-item a {
+    font-size: 1.5em;
+    color: var(--color-primary);
+}

@@ -1,0 +1,16 @@
+@import "./colors.css";
+
+
+/* barra de navegacion */
+
+@import './nav.css';
+
+body,
+html {
+    min-height: 100vh;
+    background: var(--color-background);
+}
+
+.navbar {
+    background-color: red;
+}
