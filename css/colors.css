@@ -4,4 +4,6 @@
     --color-secondary: #5C8374;
     --color-text: #9EC8B9;
     --color-white: #fff;
+    --box-shador-primary: 10px 14px 15px -6px rgba(0, 0, 0, 0.75);
+    --input-search: rgba(255, 255, 255, .4);
 }
