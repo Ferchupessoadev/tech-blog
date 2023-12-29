@@ -1,68 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!-- lol es una mierdad-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech - Blog</title>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/f845b9182b.js" crossorigin="anonymous"></script>
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <title>Tech blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body class="min-h-[100vh] flex gap-2 bg-[var(--color-background)] relative">
-    <!-- side nav -->
-    <nav id="sidebar"
-        class="sidebar hidden md:flex flex-col items-center jus z-50 h-[100vh] fixed left-0 m-0 bg-[var(--color-secondary)]">
-        <p class="border-white border-2 text-[.8em] p-2 flex justify-center items-center">Logo</p>
-        <button class="btn-sidebar absolute bottom-[45%] right-3 group" id="btn-desktop-sidebar">
-            <i class="fa-solid fa-arrow-right text-[40px] group-hover:text-[var(--color-primary)]"></i>
-        </button>
-    </nav>
-    <main class="w-[100vw] md:w-[calc(100vw_-_60px)] absolute right-0">
-        <!-- Header principal -->
-        <header
-            class="flex flex-col md:flex-row items-center md:justify-between h-[180px] w-full border-[var(--color-secondary)] border-b-2 px-3 md:px-16 gap-2 md:gap-5">
-            <div
-                class="flex text-[26px] justify-center text-center items-center container-text-primary rounded-[10px] h-[120px] w-full md:w-[60vw]">
-                <h1 class="text-[1em] sm:text-[1.4em] md:text-[2.4em] text-[var(--color-background)]">Tech - Blog</h1>
-            </div>
-            <div class="h-full flex items-center justify-center md:justify-end relative w-[80vw] md:w-[250px] gap-5">
-                <button class="inline-block md:hidden">
-                    <i class="fa-solid fa-bars text-[var(--color-secondary)] text-[2em]"></i>
-                </button>
-                <input type="text"
-                    class="input-search rounded-[20px] px-4 py-1 outline-none w-full text-[var(--color-white)] bg-[var(--color-input-search)] border-2 border-[var(--color-secondary)]"
-                    placeholder="Search">
-                <button class="absolute right-3">
-                    <i class="fa-solid fa-magnifying-glass text-[var(--color-secondary)]"></i>
-                </button>
-            </div>
-        </header>
-        <section
-            class="h-[calc(100vh_-_180px)] w-full flex flex-col gap-10 md:gap-0 md:flex-row md:justify-end p-2 py-2">
-            <div class="flex flex-col items-center justify-center w-full md:w-[50%]">
-                <p class="text-[3em]">Bienvenido</p>
-                <div class="flex flex-col md:flex-row items-center gap-1">
-                    <p>Articulo más destacado</p>
-                    <div class="arrow"><i class="fa-regular fa-hand-point-up"></i></div>
-                </div>
-            </div>
-            <div class="container-img-banner relative w-[100%] md:w-[50%] h-full overflow-hidden">
-                <a href="#" class="link-img-banner"><img class="img-banner w-full h-full absolute bg-cover"
-                        src="./img/img-1.jpg" alt=""></a>
-                <div class="absolute bottom-0 p-2 backdrop-blur-md bg-[rgba(255_255_255_/_0.2)] h-1/3 overflow-hidden">
-                    <p class="text-[1.2em] font-extrabold">Mejores portatiles para programadores</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas ut rerum. Fuga
-                        repudiandae rem
-                        eveniet ratione placeat dolores incidunt eos dicta minima...</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="./js/main.js"></script>
-</body>
+    <!-- bootstrap-ic-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
 
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav"></nav>
+    <div class="main">
+      <div class="container">
+        <article class="post">
+          <div class="post-header">
+            <h2>Sera las mamadas canibalismo?</h2>
+          </div>
+          <p data-date="2019-09-23" class="post-date">2019-09-23</p>
+          <div class="post-body">
+            <p>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat. <br />
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat.
+            </p>
+            <div class="post-img">
+              <img src="img/helado-de-menta.jpg" />
+            </div>
+            <p>
+              laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor
+              sit amet, officia excepteur ex fugiat reprehenderit enim labore
+              culpa sint ad nisi Lorem pariatur mollit ex esse exercitation
+              amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud
+              nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
+              minim nulla est proident. Nostrud officia pariatur ut officia. Sit
+              irure elit esse ea nulla sunt ex occaecat reprehenderit commodo
+              officia dolor Lorem duis laboris cupidatat officia voluptate.
+              Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+              duis officia eiusmod. Aliqua reprehenderit commodo ex non
+              excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
+              ullamco ut ea consectetur et est culpa et culpa duis.
+            </p>
+
+            <p class="autor">
+              <i class="bi bi-person-fill"></i>
+              Nefasque
+            </p>
+          </div>
+
+          <div class="post-footer">
+            <div class="post-acciones">
+              <div class="like">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <p>0</p>
+              </div>
+              <div class="dislike">
+                <i class="bi bi-hand-thumbs-down"></i>
+
+                <p>0</p>
+              </div>
+              <div class="comment">
+                <i class="bi bi-chat"></i>
+
+                <p>0</p>
+              </div>
+              <div class="share">
+                <i class="bi bi-share"></i>
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="plublicidad">plublicidad</div>
+
+        <div class="comments">
+          <div class="card-comment">
+            <div class="user-avatar">
+              <img src="img/user.png" alt="user avatar" />
+            </div>
+            <p class="user-name">Nefasque</p></p>
+            <div class="comment-body">
+              <p>
+                Lorem ipsum dolor sit
+                amet, qui minim labore
+                adipisicing.
+              </p>
+            </div>
+            <div class="comment-acciones">
+              <div class="like">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <p>0</p>
+              </div>
+              <div class="dislike">
+                <i class="bi bi-hand-thumbs-down"></i>
+                <p>0</p>
+              </div>
+              <div class="comment">
+                <i class="bi bi-chat"></i>
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-comment">
+            <div class="user-avatar">
+              <img src="img/user.png" alt="user avatar" />
+            </div>
+            <p class="user-name">Nefasque</p></p>
+            <div class="comment-body">
+              <p>
+                Lorem ipsum dolor sit
+                amet, qui minim labore
+                adipisicing.
+              </p>
+            </div>
+            <div class="comment-acciones">
+              <div class="like">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <p>0</p>
+              </div>
+              <div class="dislike">
+                <i class="bi bi-hand-thumbs-down"></i>
+                <p>0</p>
+              </div>
+              <div class="comment">
+                <i class="bi bi-chat"></i>
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-comment card-comment-reply">
+            <div class="user-avatar">
+              <img src="img/user.png" alt="user avatar" />
+            </div>
+            <p class="user-name">Nefasque</p></p>
+            <div class="comment-body">
+              <p>
+                Lorem ipsum dolor sit
+                amet, qui minim labore
+                adipisicing.
+              </p>
+            </div>
+            <div class="comment-acciones">
+              <div class="like">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <p>0</p>
+              </div>
+              <div class="dislike">
+                <i class="bi bi-hand-thumbs-down"></i>
+                <p>0</p>
+              </div>
+              <div class="comment">
+                <i class="bi bi-chat"></i>
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-related">
+          <h2>Post relacionado</h2>
+<div class="card-post-related">
+            <div class="card-post-related-img">
+              <img src="img/helado-de-menta.jpg" alt="">
+            </div>
+
+            <div class="date-post-related">
+              <h3>title</h3>
+              <p class="2023-12-27">2023-12-27</p>
+            </div>
+
+            <p class="post-related-body">
+              Lorem ipsum dolor sit amet,
+              qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat.
+            </p>
+
+            <div class="post-acciones">
+              <div class="like">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <p>0</p>
+              </div>
+              <div class="dislike">
+                <i class="bi bi-hand-thumbs-down"></i>
+
+                <p>0</p>
+              </div>
+              <div class="comment">
+                <i class="bi bi-chat"></i>
+
+                <p>0</p>
+              </div>
+              <div class="share">
+                <i class="bi bi-share"></i>
+                <p>0</p>
+              </div>
+            </div>
+
+          </div>
+
+<div class="card-post-related">
+            <div class="card-post-related-img">
+              <img src="img/helado-de-menta.jpg" alt="">
+            </div>
+
+            <div class="date-post-related">
+              <h3>title</h3>
+              <p class="2023-12-27">2023-12-27</p>
+            </div>
+
+            <p class="post-related-body">
+              Lorem ipsum dolor sit amet,
+              qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat.
+            </p>
+
+            <div class="post-acciones">
+              <div class="like">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <p>0</p>
+              </div>
+              <div class="dislike">
+                <i class="bi bi-hand-thumbs-down"></i>
+
+                <p>0</p>
+              </div>
+              <div class="comment">
+                <i class="bi bi-chat"></i>
+
+                <p>0</p>
+              </div>
+              <div class="share">
+                <i class="bi bi-share"></i>
+                <p>0</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-post-related">
+            <div class="card-post-related-img">
+              <img src="img/helado-de-menta.jpg" alt="">
+            </div>
+
+            <div class="date-post-related">
+              <h3>title</h3>
+              <p class="2023-12-27">2023-12-27</p>
+            </div>
+
+            <p class="post-related-body">
+              Lorem ipsum dolor sit amet,
+              qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat.
+            </p>
+
+            <div class="post-acciones">
+              <div class="like">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <p>0</p>
+              </div>
+              <div class="dislike">
+                <i class="bi bi-hand-thumbs-down"></i>
+
+                <p>0</p>
+              </div>
+              <div class="comment">
+                <i class="bi bi-chat"></i>
+
+                <p>0</p>
+              </div>
+              <div class="share">
+                <i class="bi bi-share"></i>
+                <p>0</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

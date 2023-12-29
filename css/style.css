@@ -1,61 +1,241 @@
-@import './normalize_color.css';
-
 @import "./colors.css";
 
-@import './nav.css';
-
-@import 'header.css';
-
-@import 'section_welcome.css';
-
-.arrow {
-    width: max-content;
-    height: max-content;
-    /* Cambia el color de la flecha aquí */
-    position: relative;
-    animation: moverFlecha 2s infinite linear;
-    /* Animación de movimiento */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.arrow i {
-    font-size: 3em;
-    color: var(--color-secondary);
+h1 {
+  font-size: 3em;
 }
 
-/* Definición de la animación */
-@keyframes moverFlecha {
-    0% {
-        transform: translateX(0) rotate(90deg);
-    }
-
-    50% {
-        transform: translateX(20px) rotate(90deg);
-        /* Altura máxima de la animación */
-    }
-
-    100% {
-        transform: translateX(0) rotate(90deg);
-    }
+h2 {
+  font-size: 1.9em;
 }
 
-@media screen and (max-width:768px) {
+p {
+  font-size: 1.3em;
+}
 
-    .arrow {
-        animation: moverFlechaResponsive 2s infinite linear;
-    }
+img {
+  width: 100%;
+}
 
-    @keyframes moverFlechaResponsive {
-        0% {
-            transform: translateY(0) rotate(180deg);
-        }
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  width: 100%;
+}
 
-        50% {
-            transform: translateY(20px) rotate(180deg);
-            /* Altura máxima de la animación */
-        }
+.nav {
+  background-color: var(--color-primary);
+  width: 8%;
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid var(--color-text);
+  margin: auto;
+}
 
-        100% {
-            transform: translateY(0) rotate(180deg);
-        }
-    }
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.container {
+  width: 90%;
+}
+
+/* post estilo */
+
+.post {
+  width: 95%;
+  margin: 20px auto;
+  background-color: var(--color-primary);
+  /* border: 1px solid #555; */
+  border: 1px solid var(--color-text);
+  border-radius: 5px;
+}
+.post-date {
+  color: var(--color-text);
+  padding: 10px;
+}
+
+.post-img {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+.post-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-text);
+}
+
+.post-body {
+  margin: 20px auto;
+  width: 95%;
+}
+
+.post-footer {
+  text-align: right;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2f2f2f;
+}
+
+.post-acciones > * {
+  margin: 0 10px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+}
+.post-acciones i {
+  font-size: 1.3em;
+}
+.post-acciones p {
+  font-size: 0.8em;
+}
+
+.autor {
+  width: 100%;
+  text-align: right;
+  padding: 5px 0;
+}
+
+.plublicidad {
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  color: #444;
+}
+
+/* estilo de los comentarios */
+.comments {
+  margin: 20px auto;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card-comment {
+  width: 90%;
+  background-color: #eee;
+  margin: 10px 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-areas:
+    "img user-name user-name "
+    "img comment-body comment-body"
+    "img comment-acciones comment-acciones";
+}
+
+.user-avatar {
+  grid-area: img;
+  background-color: #eee;
+  padding: 1rem;
+  border-right: 2px solid #aaa;
+}
+
+.user-name {
+  grid-area: user-name;
+  color: #222;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.comment-body {
+  grid-area: comment-body;
+  color: #222;
+  min-height: 100px;
+  padding: 0 10px;
+  font-size: 0.9rem;
+}
+
+.comment-acciones {
+  grid-area: comment-acciones;
+  display: flex;
+  width: 100%;
+  color: #000;
+  text-align: center;
+}
+.comment-acciones div {
+  margin: 0 10px;
+}
+.comment-acciones div * {
+  display: inline-block;
+}
+
+.card-comment-reply {
+  width: 85%;
+}
+
+/*card-post-rated*/
+.post-related {
+  width: 95%;
+  margin: auto;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid var(--color-text);
+}
+
+.post-related h2 {
+  margin: 20px;
+}
+
+.card-post-related {
+  padding-left: 10px;
+  background-color: #eee;
+  margin: 10px 0;
+  color: #000;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 2fr 1fr;
+  grid-template-areas:
+    "header header img"
+    "content content img"
+    "stats stats img";
+}
+
+.date-post-related {
+  grid-area: header;
+}
+
+.date-post-related > * {
+  display: inline-block;
+}
+
+.date-post-related > h3 {
+  font-size: 2em;
+  width: 60%;
+}
+
+.card-post-related-img {
+  grid-area: img;
+}
+
+.post-related-body {
+  grid-area: content;
+}
+
+.card-post-related .post-acciones {
+  grid-area: stats;
+  width: 100%;
 }
