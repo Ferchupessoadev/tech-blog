@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech - Blog</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f845b9182b.js" crossorigin="anonymous"></script>
     <!-- tailwind cdn -->
@@ -12,55 +16,58 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="min-h-[100vh] flex gap-2 bg-[var(--color-background)] relative">
-    <!-- side nav -->
-    <nav id="sidebar"
-        class="sidebar hidden md:flex flex-col items-center jus z-50 h-[100vh] fixed left-0 m-0 bg-[var(--color-secondary)]">
-        <p class="border-white border-2 text-[.8em] p-2 flex justify-center items-center">Logo</p>
-        <button class="btn-sidebar absolute bottom-[45%] right-3 group" id="btn-desktop-sidebar">
-            <i class="fa-solid fa-arrow-right text-[40px] group-hover:text-[var(--color-primary)]"></i>
-        </button>
-    </nav>
-    <main class="w-[100vw] md:w-[calc(100vw_-_60px)] absolute right-0">
+<body class="min-h-[100vh] flex justify-center gap-2 bg-[var(--color-background)] ">
+    <main class="w-[100%] flex flex-col items-center">
         <!-- Header principal -->
-        <header
-            class="flex flex-col md:flex-row items-center md:justify-between h-[180px] w-full border-[var(--color-secondary)] border-b-2 px-3 md:px-16 gap-2 md:gap-5">
-            <div
-                class="flex text-[26px] justify-center text-center items-center container-text-primary rounded-[10px] h-[120px] w-full md:w-[60vw]">
-                <h1 class="text-[1em] sm:text-[1.4em] md:text-[2.4em] text-[var(--color-background)]">Tech - Blog</h1>
+        <header class="flex flex-row items-center justify-center h-20 md:h-24  w-full header">
+            <div class="w-[40%] md:w-[20%] xl:w-[70%] h-full flex items-center gap-3 p-0 xl:px-5 relative">
+                <img class="w-24 h-full bg-cover" src="./img/logo.png" alt="">
+                <ul class="gap-8 hidden xl:flex absolute right-10">
+                    <li class="nav__li"><a class="text-[var(--color-text)]" href="#">Home</a></li>
+                    <li class="nav__li"><a class="text-[var(--color-text)]" href="#">Programación</a></li>
+                    <li class="nav__li"><a class="text-[var(--color-text)]" href="#">Hardware</a></li>
+                    <li class="nav__li"><a class="text-[var(--color-text)]" href="#">Ciberseguridad</a></li>
+                    <li class="nav__li"><a class="text-[var(--color-text)]" href="#">Linux</a></li>
+                </ul>
             </div>
-            <div class="h-full flex items-center justify-center md:justify-end relative w-[80vw] md:w-[250px] gap-5">
-                <button class="inline-block md:hidden">
+            <div
+                class="h-full w-[20%] md:w-[60%] xl:w-[30%] px-5 flex items-center justify-center xl:justify-end relative gap-5 m-0 xl:mx-5">
+                <div class="absolute flex items-center justify-center gap-5 transition-all duration-75 ease-linear">
+                    <div class="flex items-center gap-3 relative">
+                        <button class="">
+                            <img class="w-10 h-10 md:w-14 md:h-14" src="./img/user-circle-svgrepo-com(1).svg" alt="">
+                        </button>
+                    </div>
+                    <div class="relative items-center w-full hidden md:flex">
+                        <input type="text"
+                            class="input-search rounded-[20px] w-full px-4 py-1 outline-none text-[var(--color-white)] bg-[var(--color-input-search)]"
+                            placeholder="Search">
+                        <button class="absolute right-3">
+                            <i class="fa-solid fa-magnifying-glass text-[var(--color-secondary)]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[40%] md:w-[20%] xl:hidden flex justify-end">
+                <button class="inline-block w-32">
                     <i class="fa-solid fa-bars text-[var(--color-secondary)] text-[2em]"></i>
-                </button>
-                <input type="text"
-                    class="input-search rounded-[20px] px-4 py-1 outline-none w-full text-[var(--color-white)] bg-[var(--color-input-search)] border-2 border-[var(--color-secondary)]"
-                    placeholder="Search">
-                <button class="absolute right-3">
-                    <i class="fa-solid fa-magnifying-glass text-[var(--color-secondary)]"></i>
                 </button>
             </div>
         </header>
-        <section
-            class="h-[calc(100vh_-_180px)] w-full flex flex-col gap-10 md:gap-0 md:flex-row md:justify-end p-2 py-2">
-            <div class="flex flex-col items-center justify-center w-full md:w-[50%]">
-                <p class="text-[3em]">Bienvenido</p>
-                <div class="flex flex-col md:flex-row items-center gap-1">
-                    <p>Articulo más destacado</p>
-                    <div class="arrow"><i class="fa-regular fa-hand-point-up"></i></div>
+        <article class="w-full h-[80vh] p-5 flex gap-3 mt-28">
+            <section class="w-[70%]">
+                <div class="post w-full h-full flex flex-col gap-2">
+                    <img class="w-full h-[70%] object-cover bg-no-repeat" src="./img/img-1.jpg" alt="">
+                    <div class="w-full data p-2">
+                        <p class="text-white">Title of Article</p>
+                        <p><span class="text-white">autor:fernando pessoa</span><img src="./img/" alt=""><span
+                                class="text-white"></span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="container-img-banner relative w-[100%] md:w-[50%] h-full overflow-hidden">
-                <a href="#" class="link-img-banner"><img class="img-banner w-full h-full absolute bg-cover"
-                        src="./img/img-1.jpg" alt=""></a>
-                <div class="absolute bottom-0 p-2 backdrop-blur-md bg-[rgba(255_255_255_/_0.2)] h-1/3 overflow-hidden">
-                    <p class="text-[1.2em] font-extrabold">Mejores portatiles para programadores</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas ut rerum. Fuga
-                        repudiandae rem
-                        eveniet ratione placeat dolores incidunt eos dicta minima...</p>
-                </div>
-            </div>
-        </section>
+            </section>
+            <aside class="w-[30%]">
+            </aside>
+        </article>
     </main>
     <script src="./js/main.js"></script>
 </body>
