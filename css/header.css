@@ -6,19 +6,31 @@
 /* font de mario 64 */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Rubik+Doodle+Shadow&display=swap');
 
-.container-text-primary {
-    box-shadow: var(--box-shador-primary);
-    -webkit-box-shadow: var(--box-shador-primary);
-    -moz-box-shadow: var(--box-shador-primary);
-    background-color: var(--color-secondary);
-}
-
-.container-text-primary h1 {
-    font-family: 'Rubik Doodle Shadow', sans-serif;
-}
-
 .input-search {
-    box-shadow: var(--box-shador-primary);
-    -webkit-box-shadow: var(--box-shador-primary);
-    -moz-box-shadow: var(--box-shador-primary);
+    border: 2px solid var(--border-color-normal-input-search);
+}
+
+.input-search:focus {
+    box-shadow: -1px -1px 15px 1px rgba(92, 131, 116, 0.42);
+    -webkit-box-shadow: -1px -1px 15px 1px rgba(92, 131, 116, 0.42);
+    -moz-box-shadow: -1px -1px 15px 1px rgba(92, 131, 116, 0.42);
+    border: 2px solid var(--color-secondary);
+    width: 100%;
+    transition: all .4s ease-in;
+}
+
+
+.nav__li:hover>a {
+    border-bottom: 1px solid var(--color-text);
+}
+
+.nav__li a {
+    font-size: 1em;
+}
+
+
+.header {
+    background: rgba(255, 255, 255, 0.046);
+    backdrop-filter: blur(10px);
+    position: fixed;
 }

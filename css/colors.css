@@ -1,9 +1,10 @@
 :root {
-    --color-background: #092635;
-    --color-primary: #1B4242;
-    --color-secondary: #5C8374;
-    --color-text: #9EC8B9;
+    --color-background: #161A30;
+    --color-primary: #BE3144;
+    --color-secondary: #872341;
+    --color-text: #F05941;
     --color-white: #fff;
     --box-shador-primary: 10px 14px 15px -6px rgba(0, 0, 0, 0.75);
     --input-search: rgba(255, 255, 255, .4);
+    --border-color-normal-input-search: #6a291f;
 }
