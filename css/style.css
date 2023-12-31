@@ -7,3 +7,12 @@
 @import 'header.css';
 
 @import 'section_welcome.css';
+
+/* text-gray-400 text-[.8em] flex items-center gap-2 */
+.parrafo-hora {
+    color: rgb(156 163 175);
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

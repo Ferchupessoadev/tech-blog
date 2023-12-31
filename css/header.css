@@ -30,7 +30,13 @@
 
 
 .header {
-    background: rgba(255, 255, 255, 0.046);
+    background: rgba(255, 255, 255, 0.056);
     backdrop-filter: blur(10px);
     position: fixed;
+    transition: all .5s linear;
+}
+
+
+.toggle-header {
+    transform: translateY(-120px);
 }
