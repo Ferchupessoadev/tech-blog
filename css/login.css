@@ -1,0 +1,120 @@
+/* import color */
+@import "colors.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  font-size: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  text-align: center;
+
+  display: flex;
+}
+
+.container-form {
+  width: 50%;
+  max-width: 350px;
+  height: min-content;
+  margin: auto;
+
+  border-radius: 5px;
+}
+
+.container-form form {
+  width: auto;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid var(--color-border);
+  box-shadow: 0px 0px 10px var(--color-primary);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form form > input {
+  margin-bottom: 30px;
+  padding: 10px 0 5px 5px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--color-border);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.signup {
+  margin: auto;
+}
+
+.btn {
+  width: 90%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 40px auto 10px;
+  outline: none;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+.btn-signup {
+  background: var(--color-text);
+}
+
+.btn-signup:active {
+  background: var(--color-primary);
+}
+
+/* link style*/
+
+.link {
+  margin: 10px;
+  display: block;
+  color: var(--color-text);
+}
+
+.link a {
+  color: var(--color-gray);
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: var(--color-white);
+}
+
+/* loginWith  style */
+
+.loginWith {
+  width: 90%;
+  margin: auto;
+}
+
+.loginWith p {
+  font-size: 20px;
+}
+
+.loginWith div {
+  margin: 20px 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 13%;
+  margin: 0 10px;
+}
+
+.icon img {
+  width: 100%;
+}

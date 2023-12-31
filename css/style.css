@@ -28,7 +28,7 @@ body {
 }
 
 .nav {
-  background-color: var(--color-primary);
+  background-color: var(--color-background);
   width: 8%;
   height: 100vh;
   position: fixed;
@@ -207,7 +207,7 @@ body {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 2fr 1fr;
+  grid-template-rows: auto 2fr auto;
   grid-template-areas:
     "header header img"
     "content content img"
@@ -216,19 +216,26 @@ body {
 
 .date-post-related {
   grid-area: header;
-}
-
-.date-post-related > * {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .date-post-related > h3 {
   font-size: 2em;
-  width: 60%;
 }
 
 .card-post-related-img {
   grid-area: img;
+  width: 100%;
+  justify-self: end;
+  border: 3px solid #f00;
+}
+
+.card-post-related-img img {
+  object-position: center;
+  object-fit: fill;
 }
 
 .post-related-body {
@@ -237,5 +244,8 @@ body {
 
 .card-post-related .post-acciones {
   grid-area: stats;
-  width: 100%;
+}
+
+.card-post-related .post-acciones i {
+  font-size: 1em;
 }
