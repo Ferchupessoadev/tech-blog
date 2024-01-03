@@ -1,11 +1,5 @@
 @import './colors.css';
 
-/* Pixel Font */
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap');
-
-/* font de mario 64 */
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Rubik+Doodle+Shadow&display=swap');
-
 .input-search {
     border: 2px solid var(--border-color-normal-input-search);
 }
