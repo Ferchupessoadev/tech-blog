@@ -1,28 +1,3 @@
-@import './normalize_color.css';
-
-@import "./colors.css";
-
-@import './nav.css';
-
-@import 'header.css';
-
-@import 'section_welcome.css';
-
-/* text-gray-400 text-[.8em] flex items-center gap-2 */
-.parrafo-hora {
-    color: rgb(156 163 175);
-    font-size: .8em;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-@media screen and (max-width:600px) {
-    .parrafo-hora {
-        font-size: .7em;
-    }
-}
-
 .h2-more-article {
     margin-bottom: 30px;
     border-bottom: 1px solid rgba(255 255 255 / .4);
@@ -38,24 +13,26 @@
     -moz-text-fill-color: transparent
 }
 
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 400px;
+    gap: 10px;
+}
 
-.card-article {
+.container-cards:first-child {
+    grid-row: 1 / 3;
+}
+
+.card-grid {
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
 }
 
-.card-article img {
-    border-bottom-right-radius: 10px;
+.card-grid img {
+    border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}
-
-
-.text-title-post {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
 }
