@@ -7,4 +7,9 @@
     --box-shador-primary: 10px 14px 15px -6px rgba(0, 0, 0, 0.75);
     --input-search: rgba(255, 255, 255, .4);
     --border-color-normal-input-search: #6a291f;
+    --pink: #f87e8e;
+    --background-color-more-light: #05676e;
+    --orange-hard: #fd2200;
+    --color-more-article: var(--input-search);
+
 }
