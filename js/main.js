@@ -14,6 +14,7 @@ document.addEventListener("scroll", () => {
 })
 
 
+<<<<<<< HEAD
 // fetch api de articulos 
 
 // STRUCT HTML
@@ -53,3 +54,7 @@ const containerGrid = document.querySelector(".container-cards");
 //     .then(posts => {
 //         showPost(posts);
 //     })
+=======
+const containerGrid = document.querySelector(".container-cards");
+
+>>>>>>> main
