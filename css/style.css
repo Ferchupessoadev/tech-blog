@@ -46,6 +46,11 @@
     border-radius: 10px;
 }
 
+.box-shadow-cards {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
 .card-article img {
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -58,4 +63,17 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+}
+
+.text-description-post {
+}
+
+@media screen and (min-width:768px) {
+  .text-description-post {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
 }
